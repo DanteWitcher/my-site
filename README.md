@@ -1,17 +1,33 @@
-"# My_site" 
-Проект ещё очень сырой, поэтому:
-1. Для запуска нужно подключить MongoDb, по умолчанию подключается по коллекции emails, url находится в config/config.json {"urlb": "mongodb://localhost:27017/emails";
-2. Для отправки почты, нужно прописать в app.js корректные user и pass gmail почты, для настройки соединения.
-auth: {
-    user: "galaktika.kill@gmail.com", //Email of the sender, for connections of SMTP
-    pass: "password" //password !!!
-} 
-3. В отправке сообщения на mongoDB, значения стоят по умолчанию(libs/mongoose.js), для использования input значения формы - вставить закомментированные значения.
-new message({
-            name: "zhenya",
-            email: "sas@mail.com",//req.body.email,
-            ip: "sadad",//req.ip,
-            text: "asdasd",// req.body.message,
-            date: new Date()
-        })
-4. Запускается в app.js, можно npm start
+# Мой сайт
+
+## Описание:
+
+### RU:
+Данный сайт написан чисто в учебных целях, и не притендует на супер код, супер стиль, супер технологии. Просто - это мой первый, целый проект, который полностью написан мною, я его люблю, и не планирую ничего кардинально менять. Здесь размещены мои рисунки и работы спластелина, также вы можете скачать моё CV, свзаться со мною через представленные социальные сети, либонаписать мне на email.
+
+### EN:
+This site is written purely for educational purposes, and does not pretend to be super code, super style, super technology. It's just that this is my first, whole project, which was completely written by me, I love it, and I do not plan to radically change anything. Here are my drawings and works of the splatter, you can also download my CV, contact me through the provided social networks, or write to me by email.
+
+## Окружение:
+
+
+```bash
+#Создать файл .env
+
+PORT=${port}
+MONGODB_URI=mongodb+srv://${name}:${password}@${cluster}mongodb.net/${db}
+SENDER=${email}
+PASSWORD=${password}
+RECIPIENT=${email}
+NODE_ENV=development | production
+```
+
+## Запуск:
+
+```bash
+node run start
+```
+
+## Ознакомиться с проектом:
+
+[Ссылка на проект - kakhanovichall.com](https://kakhanovichal.herokuapp.com)
