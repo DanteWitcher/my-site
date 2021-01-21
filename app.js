@@ -14,6 +14,13 @@ const form = require('multer')();
 
 const app = express();
 
+console.log(`CHECK ENVs: MONGODB_URI=${process.env.MONGODB_URI}, 
+                         SENDER=${process.env.SENDER}
+                         PASSWORD=${process.env.PASSWORD}
+                         RECIPIENT=${process.env.RECIPIENT}
+                         PORT=${process.env.PORT}
+                         NODE_ENV=${process.env.NODE_ENV}`);
+
 i18n.configure({
     locales: ['en', 'ru'],
     cookie: 'lang',

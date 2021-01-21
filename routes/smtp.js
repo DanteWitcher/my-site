@@ -24,14 +24,14 @@ module.exports = function (req, res) {
     smtpTrans = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: process.env.SENDER || 'login',
-            pass: process.env.PASSWORD || 'pass'
+            user: `${process.env.SENDER}` || 'login',
+            pass: `${process.env.PASSWORD}` || 'pass'
         }
     });
 
     mailOpts = {
         from: req.body.name + ' &lt;' + req.body.email + '&gt;',
-        to: process.env.RECIPIENT, 
+        to: `${process.env.RECIPIENT}`, 
         subject: 'Message title',
         text: req.body.message + ' email: ' + req.body.email + ', name: ' + req.body.name
     };
@@ -46,11 +46,13 @@ module.exports = function (req, res) {
     smtpTrans.sendMail(mailOpts, function (error, response) {
         const _message = isRu() ? messageSend.ru : messageSend.en;
 
+        console.log(`Sending of message, error = ${error}`);
+
         if (error) {
             res.send(JSON.stringify({ message: _message.bad }));
         } else {
             mongoose(db_data).then((answer) => {
-                console.log(answer)
+                console.log(answer);
                 if (!answer) {
                     console.log('-1');
                     res.send(JSON.stringify({ message: _message.bad }));
