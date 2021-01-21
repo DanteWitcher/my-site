@@ -29,7 +29,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "heroku:env": "heroku config:set $(cat .env | sed '/^$/d; /#[[:print:]]*$/d')"
   },
   "author": "aliaksandr",
   "license": "ISC",
