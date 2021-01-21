@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/*
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: 16px/20px 'Trebuchet MS', Times, sans-serif;
+  font: inherit;
+  vertical-align: baseline;
+  color: #fff;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block;
+}
+
+#menu {
+    display: flex;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+}
+
+button, input, textarea {
+  outline: none;
+}
+
+.clearfix::after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+@font-face {
+  font-family: 'SF UI Display Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Black"), url("../fonts/sfui/sf-ui-display-black-58646a6b80d5a.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SF UI Display Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Heavy"), url("../fonts/sfui/sf-ui-display-heavy-586470160b9e5.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SF UI Display Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Light"), url("../fonts/sfui/sf-ui-display-light-58646b33e0551.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SF UI Display Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Medium"), url("../fonts/sfui/sf-ui-display-medium-58646be638f96.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SF UI Display Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Thin"), url("../fonts/sfui/sf-ui-display-thin-58646e9b26e8b.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SF UI Display Ultralight';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Ultralight"), url("../fonts/sfui/sf-ui-display-ultralight-58646b19bf205.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SF UI Display Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Bold"), url("../fonts/sfui/sf-ui-display-bold-58646a511e3d9.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SF UI Display Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Semibold"), url("../fonts/sfui/sf-ui-display-semibold-58646eddcae92.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Amalfi';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Amalfi"), url("../fonts/amalfi/Amalfi-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Antipasto-Pro-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/antipasto/Antipasto-Pro-Light-trial.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Antipasto-Pro-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/antipasto/Antipasto-Pro-Medium-trial.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Antipasto-Pro-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/antipasto/Antipasto-Pro-Regular-trial.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Antipasto-Pro-Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/antipasto/Antipasto-Pro-Thin-trial.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Starway";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/starway/Starway.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Starway-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/starway/Starway-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Starway-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/starway/Starway-Light.otf") format("opentype");
+}
+
+body {
+  height: 100%;
+  background: #7c7ab0 url("../img/background.jpg") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  font-family: "SF UI Display Heavy";
+}
+
+.wrapper {
+  background: -webkit-linear-gradient(26deg, rgba(153, 152, 152, 0.29) 5%, rgba(0, 0, 0, 0.29) 95%);
+  background: -o-linear-gradient(26deg, rgba(153, 152, 152, 0.29) 5%, rgba(0, 0, 0, 0.29) 95%);
+  background: linear-gradient(64deg, rgba(153, 152, 152, 0.29) 5%, rgba(0, 0, 0, 0.29) 95%);
+  background: rgba(35, 35, 35, 0.3);
+  filter: alpha(opacity=30);
+  /* For IE8 and earlier */
+  max-width: 960px;
+  min-height: 720px;
+  margin: 0 auto;
+}
+
+

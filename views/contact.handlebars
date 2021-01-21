@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css" href="css/contact.css">
+<div id="main_contact">
+    <div class="container">
+        <div class="contact_img"></div>
+        <h2>{{__ "contact_title"}}</h2>
+        <form name='contacts' id='form'>
+            <fieldset>
+                <ul>
+                    <li><label for="name">{{__ "contact_name"}}</label><input type="text" name="name" id="name" maxlength="50"
+                            required></li>
+                    <li><label for="email">{{__ "contact_email"}}</label><input name="email" id="email" type="email"
+                            required></li>
+                    <li><label for="message">{{__ "contact_message"}}</label><textarea name="message" id="message"
+                            cols="30" rows="10" maxlength="400"required></textarea></li>
+                </ul>
+                <input type='submit' name='submit' value='send' id="submit">
+            </fieldset>
+        </form>
+    </div>
+</div>
+<script async src="js/form.js"></script>

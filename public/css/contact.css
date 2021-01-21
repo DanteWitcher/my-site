@@ -1,0 +1,76 @@
+#main_contact {
+    margin-top: 20px;
+    min-height: 400px;
+}
+
+.container {
+  background: #ddd url('../img/lines.png');
+  margin: 0 auto;
+  max-width: 400px;
+  height: 300px;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+}
+.container h2, .container p, .container label {
+    color: black;
+}
+
+.container h2 {
+    margin-top: -20px; 
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.container ul > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px;
+
+}
+.container input {
+    flex: 1 1 auto;
+}
+
+.container input#submit {
+    min-width: 80px;
+    margin-left: auto;
+}
+
+.container textarea {
+    flex: 1 1 auto;
+}
+   
+.container label {
+    flex: 1 1 auto;
+}
+
+.container::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 180px;
+    box-shadow: -10px 0 30px #999;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+    background: #aaa;
+    -webkit-transform: rotate(-5deg);
+}
+
+.container .contact_img {
+    background: url('../img/mail.png') no-repeat;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    position: absolute;
+}
+
+#form fieldset {
+    display: flex;
+    flex-direction: column;
+}

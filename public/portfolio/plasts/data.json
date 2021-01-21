@@ -1,0 +1,34 @@
+[
+    {
+        "url":[
+            "https://images.vfl.ru/ii/1552989519/ef5c8008/25826439_m.jpg",
+            "https://images.vfl.ru/ii/1552989519/6f27c97d/25826440.jpg",
+            "https://images.vfl.ru/ii/1552989520/d08433a1/25826442.jpg",
+            "https://images.vfl.ru/ii/1552989520/acb577b4/25826443.jpg",
+            "https://images.vfl.ru/ii/1552989520/2920c63f/25826444.jpg"            
+        ],
+        "name":"pudge" 
+    },
+    {
+        "url": [
+            "http://images.vfl.ru/ii/1558291313/aea8b833/26588551.jpg",
+            "http://images.vfl.ru/ii/1558291314/ab4246bd/26588552.jpg",
+            "http://images.vfl.ru/ii/1558291314/abf03f7a/26588553.jpg",
+            "http://images.vfl.ru/ii/1558291314/ec43c150/26588554.jpg",
+            "http://images.vfl.ru/ii/1558291314/99959be5/26588555.jpg",
+            "http://images.vfl.ru/ii/1558291314/ee6f80b5/26588556.jpg"
+        ],
+        "name": "batman"
+    },
+    {
+        "url": [
+            "http://images.vfl.ru/ii/1558293166/a3c63ae2/26589145.jpg",
+            "http://images.vfl.ru/ii/1558293166/f6ae400b/26589146.jpg",
+            "http://images.vfl.ru/ii/1558293167/a7177a6c/26589147.jpg",
+            "http://images.vfl.ru/ii/1558293167/5ad411d0/26589148.jpg",
+            "http://images.vfl.ru/ii/1558293167/0122bfcd/26589149.jpg",
+            "http://images.vfl.ru/ii/1558293167/215b3900/26589150.jpg"
+        ], 
+        "name": "cat"
+    }
+]

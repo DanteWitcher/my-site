@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{__ "title"}}</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script async src="js/setCookie.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="top">
+                <ul class="switchLang">
+                    <li>
+                        <div>{{__ "en"}}</div>
+                        <a href="?lang=en" id="en" onclick="setCookie('lang', 'en')"></a>
+                    </li>
+                    <li>
+                        <div>{{__ "ru"}}</div>
+                        <a href="?lang=ru" id="ru" onclick="setCookie('lang', 'ru')"></a>
+                    </li>
+                </ul>
+                <img src="img/svg/logo.svg" alt="Logotype" />
+            </div>
+            <nav>
+                <div class="line"></div>
+                <ul id="menu">
+                    <li><a id="home" href="/">{{__ "home"}}</a></li>
+                    <li><a id="about" href="/about">{{__ "about"}}</a></li>
+                    <li><a id="work" href="/work">{{__ "work"}}</a></li>
+                    <li><a id="contact" href="/contact">{{__ "contact"}}</a></li>
+                </ul>
+            </nav>
+        </header>
+        {{{body}}}
+        <footer>
+            <ul class="social">
+                <li><a target="_blank" href="https://www.behance.net/kakhanovicbee4" id="behance"></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100001984388466" id="facebook"></a>
+                </li>
+                <li><a target="_blank" href="skype:DanteWitcher?call" id="skype"></a></li>
+                <li><a target="_blank" href="https://t.me/dantewitcher" id="telegram"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/dantewitcher" id="instagram"></a></li>
+                <li><a target="_blank" href="viber://add?number=+375292595376" id="viber"></a></li>
+                <li><a target="_blank" href="https://github.com/DanteWitcher" id="github"></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/aliaksandr-kakhanovich-820022117"
+                        id="linkedin"></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

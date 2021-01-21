@@ -1,0 +1,123 @@
+#main_home {
+    position: relative;
+    min-height: 400px;
+}
+
+#main_home .outer {
+    width: 150px;
+    height: 57px;
+    margin: 10px auto;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #E6E7E8;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    -webkit-box-shadow: 0 4px #bbbdc0;
+    box-shadow: 0 4px #bbbdc0;
+}
+
+#main_home .outer button {
+    font-family: Amalfi;
+    font-size: 2.5em;
+    line-height: 1px;
+    cursor: pointer;
+    margin-top: 1px;
+    width: 141px;
+    height: 45px;
+    background: #6D6D6D url("../img/Vector-Smart-Object2.png") no-repeat center 5px;
+    border: none;
+    border-bottom: 3px solid #808080;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 4px #464646;
+    box-shadow: 0 4px #464646;
+}
+
+#main_home .outer button:hover {
+    -webkit-box-shadow: 0 3px #464646;
+    box-shadow: 0 3px #464646;
+    -webkit-transition: margin-top 0.2s ease-in-out;
+    -o-transition: margin-top 0.2s ease-in-out;
+    transition: margin-top 0.2s ease-in-out;
+    margin-top: 2px;
+}
+
+#main_home .outer button:active {
+    -webkit-box-shadow: 0 1px #464646;
+    box-shadow: 0 1px #464646;
+    -webkit-transition: margin-top 0.2s ease-in-out;
+    -o-transition: margin-top 0.2s ease-in-out;
+    transition: margin-top 0.2s ease-in-out;
+    margin-top: 4px;
+    background-image: none;
+}
+
+#main_home .me_photo {
+    position: absolute;
+    width: 33.65%;
+    right: 7.5%;
+    top: 10%;
+    z-index: 0;
+}
+
+#main_home .me_pixel {
+    position: absolute;
+    top: 20%;
+    right: 47%;
+    z-index: 0;
+}
+
+#main_home h1 {
+    color: #fff;
+    font-size: 4.5em;
+    margin-left: 7%;
+    margin-top: 3%;
+    text-transform: capitalize;
+    font-family: Starway, "SF UI Display Heavy";
+}
+
+#main_home h1:first-letter {
+    color: #d53631;
+    font-size: 2em;
+}
+
+#main_home h1 span {
+    display: block;
+    margin-left: 12%;
+    color: #fff;
+}
+
+#main_home h1 span:first-letter {
+    color: #d53631;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 920px) {
+    #main_home .me_pixel {
+        display: none;
+    }
+
+
+    #main_home h1 span {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #main_home .me_photo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #menu {
+        font-size: 2rem;
+    }
+
+    #main_home h1 {
+        font-size: 3.5em;
+        margin-top: 13%;
+        margin-left: 4%;
+    }
+}

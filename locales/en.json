@@ -1,0 +1,19 @@
+{
+	"title": "Aliaksandr Kakhanovich",
+	"en": "EN",
+	"ru": "RU",
+	"home": "HOME",
+	"about": "ABOUT",
+	"work": "WORK",
+	"contact": "CONTACT",
+	"resume": "RESUME",
+	"no_data": "Data's not found",
+	"contact_title": "Send message to me",
+	"contact_name": "Your Name:",
+	"contact_message": "Message:",
+	"contact_email": "Your email:",
+	"drawings": "Drawings",
+	"plasts": "Plasts",
+	"progs": "Programmings",
+	"about_text": "Hello everyone, this is my first project on Node JS + mongoDB, I know there are a lot of problems in terms of development, because the goal of the project was to create a simple business card site and try out new technologies. On the site you can view my drawings, the figures I put together, and perhaps, in the future, some projects in the field of programming, all this can be viewed in the 'works', you can also write me :). I am a Front-End developer, I mainly work with Angular 1-2, I love to draw, sculpt, play guitar, read (also books in English), animals, and of course programming and Linux. Thanks for attention."
+}

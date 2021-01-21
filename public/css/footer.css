@@ -1,0 +1,103 @@
+footer ul.social {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 300px;
+    height: 29px;
+}
+
+footer ul.social li {
+    width: 29px;
+    height: 29px;
+    background: #fff;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+footer ul.social li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+footer ul.social li a:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    /* For IE8 and earlier */
+}
+
+footer ul.social li a#behance {
+    background-image: url("../img/svg/socialIcons.svg");
+    background-position: -141px -11px;
+    -webkit-background-size: 622%;
+    background-size: 622%;
+}
+
+footer ul.social li a#facebook {
+    background-image: url("../img/svg/socialIcons.svg");
+    background-position: -43.5px -45px;
+    -webkit-background-size: 622%;
+    background-size: 622%;
+}
+
+footer ul.social li a#skype {
+    background-image: url("../img/svg/socialIcons.svg");
+    background-position: -11px -45px;
+    -webkit-background-size: 622%;
+    background-size: 622%;
+}
+
+footer ul.social li a#viber {
+    background-image: url("../img/svg/socialIcons.svg");
+    background-position: -108.5px -45px;
+    -webkit-background-size: 622%;
+    background-size: 622%;
+}
+
+footer ul.social li a#github {
+    background-image: url("../img/svg/socialIcons.svg");
+    background-position: -11px -147px;
+    -webkit-background-size: 622%;
+    background-size: 622%;
+}
+
+footer ul.social li a#linkedin {
+    background-image: url("../img/svg/socialIcons.svg");
+    background-position: -141px -79px;
+    -webkit-background-size: 622%;
+    background-size: 622%;
+}
+
+footer ul.social li a#instagram {
+    background-image: url("../img/svg/socialIcons.svg");
+    background-position: -43px -11px;
+    -webkit-background-size: 622%;
+    background-size: 622%;
+}
+
+footer ul.social li a#telegram {
+    background-image: url("../img/svg/socialIcons.svg");
+    background-position: -502px -45px;
+    -webkit-background-size: 622%;
+    background-size: 622%;
+}
+
+footer {
+    z-index: 1000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}

@@ -1,0 +1,113 @@
+header .top {
+  padding-top: 1%;
+  position: relative;
+}
+
+header .top .switchLang {
+  font-family: "Antipasto-Pro-Regular";
+  right: 2%;
+  position: absolute;
+}
+
+header .top .switchLang li {
+  display: inline-block;
+  text-align: center;
+}
+
+header .top .switchLang li:first-child {
+  margin-right: 5px;
+}
+
+header .top .switchLang li a {
+  display: block;
+  height: 32px;
+  width: 32px;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+
+header .top .switchLang li a#en {
+  background: url("../img/svg/languages.svg") -10px -5px;
+  -webkit-background-size: 100px;
+  background-size: 100px;
+}
+
+header .top .switchLang li a#ru {
+  background: url("../img/svg/languages.svg") -50px -5px;
+  -webkit-background-size: 100px;
+  background-size: 100px;
+}
+
+header .top .switchLang li a:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+}
+
+header .top img {
+  display: block;
+  width: 71px;
+  height: 71px;
+  margin: 0 auto;
+}
+
+header nav .line {
+  height: 3px;
+  background-color: #afb4ef;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+  opacity: 0.5;
+  margin-bottom: 1.45%;
+}
+
+header nav ul {
+  width: 98%;
+  margin: 0 auto;
+  font-family: Amalfi;
+  font-size: 3em;
+}
+
+header nav ul li {
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  line-height: 45px;
+  /* эмуляция inline-block для IE6-7*/
+}
+
+header nav ul li a {
+  display: inline-block;
+  width: 100%;
+}
+
+header nav ul li a#home {
+  background-color: #007236;
+}
+
+header nav ul li a#home:hover {
+  background-color: #00a54e;
+}
+
+header nav ul li a#about {
+  background-color: #604f97;
+}
+
+header nav ul li a#about:hover {
+  background-color: #7a69b0;
+}
+
+header nav ul li a#work {
+  background-color: #ac423f;
+}
+
+header nav ul li a#work:hover {
+  background-color: #c35e5b;
+}
+
+header nav ul li a#contact {
+  background-color: #868686;
+}
+
+header nav ul li a#contact:hover {
+  background-color: #a0a0a0;
+}
